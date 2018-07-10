@@ -8,18 +8,18 @@ get_header();
         <div class="aboutPages">
 
             <div class="top textCentered">
-                <img src="images/callus.png" alt="">
+                <img src="  <?php echo get_template_directory_uri().'/assets/images/callus.png' ?>" alt="">
                 <div>إتصل بنا</div>
             </div>
 
             <div class="tabs textCentered">
                 <div class="current">إتصل بنا <i class="icon-arrow-down"></i></div>
                 <div class="in">
-                    <a href="#">شروط وأحكام</a>
-                    <a href="#">إتفاقية الخصوصية</a>
-                    <a href="#">إتفاقية ملفات الإوتباط</a>
-                    <a href="#">الأسئلة الشائعة</a>
-                    <a href="#" class="active">إتصل بنا</a>
+                    <a href="http://localhost/dotEmirate/?page_id=120">شروط وأحكام</a>
+                    <a href="http://localhost/dotEmirate/?page_id=102">إتفاقية الخصوصية</a>
+                    <a href="http://localhost/dotEmirate/?page_id=117">إتفاقية ملفات الإوتباط</a>
+                    <a href="http://localhost/dotEmirate/?page_id=108">الأسئلة الشائعة</a>
+                    <a href="http://localhost/dotEmirate/?page_id=98" class="active">إتصل بنا</a>
                 </div>
             </div>
 
@@ -71,11 +71,11 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="textCentered"><img src="images/attractions.jpg" alt=""></div>
+            <div class="textCentered"><img src="<?php echo get_template_directory_uri().'/assets/images/attractions.jpg' ?>" alt=""></div>
 
         </div>
-        <?php wp_footer()?>
-
     </div>
 </div>
+<?php wp_footer()?>
+
 
