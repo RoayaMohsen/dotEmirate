@@ -176,6 +176,14 @@
 
     }
 
+    // add_to_theme
+        add_theme_support('post-thumbnails');
+
+
+
+
+
+
     function ju_admin_enqueue()
 
     {
