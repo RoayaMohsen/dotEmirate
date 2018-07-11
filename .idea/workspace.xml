@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c86d15ab-b6fd-4518-ba19-3a3a1e5fe309" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/agreements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/contactus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/doc_widgets.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/hh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/privacy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/terms.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-category.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,11 +62,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single-article.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="single-article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/single-article.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-category.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/page-category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -164,6 +160,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-singleArticle.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/single-article.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-category.php" />
       </list>
     </option>
   </component>
@@ -286,12 +283,12 @@
       <workItem from="1531205734171" duration="4785000" />
       <workItem from="1531215861703" duration="16274000" />
       <workItem from="1531292069212" duration="12850000" />
-      <workItem from="1531308138695" duration="11882000" />
+      <workItem from="1531308138695" duration="12138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144291000" />
+    <option name="totallyTimeSpent" value="144547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,7 +331,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/test/header.html" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/test/js/html5shiv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -615,6 +611,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/page-category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
