@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c86d15ab-b6fd-4518-ba19-3a3a1e5fe309" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,17 +31,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="86" column="81" selection-start-line="86" selection-start-column="81" selection-end-line="86" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/test/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="26" column="55" selection-start-line="26" selection-end-line="27" />
+            <state>
+              <caret line="285" column="42" selection-start-line="285" selection-start-column="42" selection-end-line="285" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -49,8 +40,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="498" column="53" lean-forward="true" selection-start-line="498" selection-start-column="31" selection-end-line="498" selection-end-column="53" />
+            <state relative-caret-position="7365">
+              <caret line="498" column="53" selection-start-line="498" selection-start-column="31" selection-end-line="498" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -86,6 +77,8 @@
       <find>enqueue_sc</find>
       <find>wp_enqueue_script</find>
       <find>option_verify</find>
+      <find>offset</find>
+      <find>wide</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,7 +98,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/test/css/main.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/test/404.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/test/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/test/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/test/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/test/header.php" />
@@ -122,6 +114,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-agreements.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-privacy.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/test/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" />
       </list>
     </option>
@@ -142,7 +135,7 @@
       <path value="" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="87" />
     <option name="y" value="100" />
     <option name="width" value="1279" />
@@ -243,12 +236,13 @@
       <workItem from="1531040577955" duration="13606000" />
       <workItem from="1531120019609" duration="21162000" />
       <workItem from="1531205734171" duration="4785000" />
-      <workItem from="1531215861703" duration="15459000" />
+      <workItem from="1531215861703" duration="16274000" />
+      <workItem from="1531292069212" duration="9373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118744000" />
+    <option name="totallyTimeSpent" value="128932000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,10 +254,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1992032" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20239043" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32970452" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" show_stripe_button="false" sideWeight="0.5011952" side_tool="true" weight="0.32970452" />
@@ -462,18 +456,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="120" column="70" lean-forward="true" selection-start-line="120" selection-start-column="70" selection-end-line="120" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/agreements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1845" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/faq.html" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/agreements.html" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/terms.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -567,22 +551,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="498" column="53" lean-forward="true" selection-start-line="498" selection-start-column="31" selection-end-line="498" selection-end-column="53" />
+        <state relative-caret-position="7365">
+          <caret line="498" column="53" selection-start-line="498" selection-start-column="31" selection-end-line="498" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/test/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="55" selection-start-line="26" selection-end-line="27" />
+        <state relative-caret-position="271">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="86" column="81" selection-start-line="86" selection-start-column="81" selection-end-line="86" selection-end-column="81" />
+        <state>
+          <caret line="285" column="42" selection-start-line="285" selection-start-column="42" selection-end-line="285" selection-end-column="42" />
         </state>
       </provider>
     </entry>
