@@ -210,6 +210,13 @@
 
     }
 
+    function add_ajax(){
+        wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), time(), true );
+        /* localize script */
+
+
+
+    }
 
 
     //Action & Filter Hocks
