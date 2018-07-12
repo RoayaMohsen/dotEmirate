@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c86d15ab-b6fd-4518-ba19-3a3a1e5fe309" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/wp_bootstrap_navwalker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/articleDetails.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/articles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/section.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-about.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-agreements.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-agreements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-contactus.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-contactus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-faq.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-privacy.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-privacy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-terms.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-terms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/single-article.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/single-article.php" afterDir="false" />
-    </list>
+    <list default="true" id="c86d15ab-b6fd-4518-ba19-3a3a1e5fe309" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +37,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+            <state relative-caret-position="15">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -293,12 +271,12 @@
       <workItem from="1531215861703" duration="16274000" />
       <workItem from="1531292069212" duration="12850000" />
       <workItem from="1531308138695" duration="12617000" />
-      <workItem from="1531378667159" duration="29649000" />
+      <workItem from="1531378667159" duration="29974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174675000" />
+    <option name="totallyTimeSpent" value="175000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,8 +595,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+        <state relative-caret-position="15">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
