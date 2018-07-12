@@ -2,6 +2,30 @@
 
 <?php get_header() ?>
 
+<div class="loading">
+    <div class="tableDis">
+        <div class="oneCell">
+            <div class="theImg">
+                <img src="<?php echo get_template_directory_uri().'/assets/images/loadingLogo.png'?>" alt="">
+                <svg height="176" width="176">
+                    <circle cx="88" cy="88" r="87" stroke="#C1CA35" stroke-width="2" stroke-dasharray="546" fill="none"></circle><!-- stroke-dasharray="672" -->
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script >
+
+    $(window).on('load', function () {
+        $('.loading').css('display', 'none')
+    })
+
+
+
+</script>
+
 
     <div class="mainContent">
         <div class="gridContainer">
@@ -24,10 +48,10 @@
                             <div class="<?php echo ($query->current_post==0)? 'mainPost big':'mainPost'?>">
 
                                 <div class="top">
-                                    <div class="img"><img src="images/source.jpg" alt=""></div>
+                                    <div class="img"><img src="<?php echo get_field('source_image') ?>" alt=""></div>
                                     <div class="data">
-                                        <div class="source"> Source </div>
-                                        <div>منذ دقيقة</div>
+                                        <div class="source"> <?php echo get_field('source_name') ?> </div>
+                                        <div><?php the_time(wp_show_date());?> </div>
                                     </div>
                                 </div>
                                 <a href="<?php  the_permalink() ?>" class="avatar"><img src="<?php echo get_the_post_thumbnail_url() ; ?>" class="bgCover" alt=""></a>
@@ -78,10 +102,10 @@
                             <div class="mainPost small">
 
                                 <div class="top">
-                                    <div class="img"><img src="images/source.jpg" alt=""></div>
+                                    <div class="img"><img src="<?php echo get_field('source_image') ?>" alt=""></div>
                                     <div class="data">
-                                        <div class="source">  Source </div>
-                                        <div>منذ دقيقة</div>
+                                        <div class="source"> <?php echo get_field('source_name') ?> </div>
+                                        <div>  <?php the_time(wp_show_date());?> </div>
                                     </div>
                                 </div>
 
@@ -117,7 +141,7 @@
             </div>
 
             <hr>
-                                          <!-- for the third section        -->
+                                          <!-- for the third section    image section    -->
             <?php $single = new WP_Query( array(
                         'post_type' => 'post',
                         'posts_per_page' => '1',
@@ -133,10 +157,10 @@
                 <div class="content">
                     <div class="in clearfix">
                         <div class="top">
-                            <div class="img"><img src="images/source.jpg" alt=""></div>
+                            <div class="img"><img src="<?php echo get_field('source_image') ?>" alt=""></div>
                             <div class="data">
-                                <div class="source"> <?php  the_category();     ?>  </div>
-                                <div>منذ دقيقة</div>
+                                <div class="source"> <?php echo get_field('source_name') ?> </div>
+                                <div><?php the_time(wp_show_date());?> </div>
                             </div>
                         </div>
                         <h3 class="title"><a href="<?php  the_permalink();  ?>"></a> <?php echo get_the_title()?></h3>
@@ -172,10 +196,10 @@
                     <div class="mycol-lg-3 mycol-sm-6">
                         <div class="mainPost small">
                             <div class="top">
-                                <div class="img"><img src="images/source.jpg" alt=""></div>
+                                <div class="img"><img src="<?php echo get_field('source_image') ?>" alt=""></div>
                                 <div class="data">
-                                    <div class="source"> source  </div>
-                                    <div>منذ دقيقة</div>
+                                    <div class="source"> <?php echo get_field('source_name') ?> </div>
+                                    <div> <?php the_time(wp_show_date());?> </div>
                                 </div>
                             </div>
                             <div class="content">
@@ -218,10 +242,10 @@
                     <div class="mycol-lg-6">
                         <div class="mainPost small">
                             <div class="top">
-                                <div class="img"><img src="images/source.jpg" alt=""></div>
+                                <div class="img"><img src="<?php echo get_field('source_image') ?>" alt=""></div>
                                 <div class="data">
-                                    <div class="source">Source</div>
-                                    <div>منذ دقيقة</div>
+                                    <div class="source"> <?php echo get_field('source_name') ?> </div>
+                                    <div> <?php the_time(wp_show_date());?> </div>
                                 </div>
                             </div>
                             <a href="<?php the_permalink() ?>" class="avatar"><img src="<?php echo get_the_post_thumbnail_url() ?>" class="bgCover" alt=""></a>
@@ -267,10 +291,10 @@
                     <div class="mycol-lg-3 mycol-sm-6">
                         <div class="mainPost">
                             <div class="top">
-                                <div class="img"><img src="images/source.jpg" alt=""></div>
+                                <div class="img"><img src="<?php echo get_field('source_image') ?>" alt=""></div>
                                 <div class="data">
-                                    <div class="source"> Source </div>
-                                    <div>منذ دقيقة</div>
+                                    <div class="source"> <?php echo get_field('source_name') ?> </div>
+                                    <div><?php the_time(wp_show_date());?> </div>
                                 </div>
                             </div>
                             <a href="#" class="avatar"><img src="<?php echo get_the_post_thumbnail_url(); ?>" class="bgCover" alt=""></a>
@@ -314,10 +338,10 @@
                 <div class="content">
                     <div class="in clearfix">
                         <div class="top">
-                            <div class="img"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""></div>
+                            <div class="img"><img src="<?php echo get_field('source_image') ?>" alt=""></div>
                             <div class="data">
-                                <div class="source"> Source </div>
-                                <div>منذ دقيقة</div>
+                                <div class="source"> <?php echo get_field('source_name') ?> </div>
+                                <div><?php the_time(wp_show_date());?> </div>
                             </div>
                         </div>
                         <h3 class="title"><a href="<?php the_permalink() ?>"> <?php  echo get_the_title(); ?>  </a></h3>
@@ -351,10 +375,10 @@
                     <div class="mycol-lg-6">
                         <div class="mainPost big">
                             <div class="top">
-                                <div class="img"><img src="images/source.jpg" alt=""></div>
+                                <div class="img"><img src="<?php echo get_field('source_image') ?>" alt=""></div>
                                 <div class="data">
-                                    <div class="source"> Source </div>
-                                    <div>منذ دقيقة</div>
+                                    <div class="source"> <?php echo get_field('source_name') ?> </div>
+                                    <div><?php the_time(wp_show_date());?> </div>
                                 </div>
                             </div>
                             <a href="<?php the_permalink(); ?>" class="avatar"><img src="<?php echo get_the_post_thumbnail_url()?>" class="bgCover" alt=""></a>
@@ -395,7 +419,7 @@
 
 
 
-    <?php wp_footer()?>
+<?php get_footer() ?>
 
 
 </body>

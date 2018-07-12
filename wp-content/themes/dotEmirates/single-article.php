@@ -1,34 +1,37 @@
-    <?php get_header();?>
+
+<?php get_header();
+        if (have_posts()):
+            $id = get_the_ID();
+
+        while (have_posts()) : the_post();
+    ?>
+
+
 
     <div class="mainContent">
         <div class="gridContainer">
 
+
             <div class="detailsPage">
 
-                <div class="avatar"><img src="images/3.jpg" alt=""></div>
+                <div class="avatar"><img src="<?php echo get_the_post_thumbnail_url() ?>" alt=""></div>
                 <div class="writerTop">
-                    <span class="img"><img src="images/user.jpg" alt=""></span>
-                    <span>محمد أحمد</span>
+                    <span class="img"><img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" style="width: 36px" alt=""></span>
+                    <span> <?php echo get_the_author_meta('first_name')." ".get_the_author_meta('last_name') ; ?></span>
                 </div>
                 <h1>
-                    الصندوق الذي يتحكم في ما تبقى من الإمبراطورية الصندوق الذييتحكم في ما تبقى من الإمبراطورية الصندوق الذي يتحكم في ما تبق من الإمبراطوريةالصندوق الذي يتحكم في ما تبقى من الإمبراطورية الصندوق الذييتحكم في ما تبقى من الإمبراطوري
+                    <?php the_title() ?>
                 </h1>
                 <div class="theDetails">
                     <p>
-                        ولي العهد محمد بن زايد آل نهيان هو ابن مؤسس أبو ظبي ورئيس مجلس إدارة الصندوق. تصوير: بازوكي محمد / رويترز منذ إنشائها في عام 2002 ، لم يكن لدى أحدث صناديق الثروة السيادية الثلاثة التابعة لحكومة أبوظبي - مبادلة - مكتب خارج الأراضي العربية ، على الرغم من وجوده في 20 بلداً بقيمة أصولها 48 مليار دولار. وقد أصدر ولي العهد محمد بن زايد آل نهيان ، نجل مؤسس أبو ظبي ورئيس مجلس إدارة الصندوق ، حكما يقضي بأن جميع الأعمال سوف يتم التطرق إليها من هناك. حتى عبور برازيلي طريقه وأجبره على تغيير الخطط.
-                    </p>
-                    <p>
-                        قبل الانهيار ، تمكن إيكي باتيستا من إقناع شركة مبادلة للاستثمار في شركاتها. بدأت المحادثات في عام 2011 ، واستغرقت عامًا تقريبًا ، وطالبت بالعديد من الرحلات من رجل الأعمال وممثلي الحكومة البرازيلية إلى أغنى دولة في الإمارات العربية المتحدة وتوجت بزيارة الأمير إلى كرنفال ريو ، وفي مارس 2012 ، تم التوقيع على الشيك. من 2 مليار دولار. لم يكن هذا مبلغًا صغيرًا ، نظرًا لأن الصندوق قد حقق بعض الخسائر بالفعل ، وفي العام الماضي ، على سبيل المثال ، حقق أرباحًا بقيمة 282 مليون دولار - وهو انخفاض بنسبة 28٪ مقارنةً بعام 2013.
-                    </p>
-                    <p>
-                        يقول مصدر اتبع نهج العرب مع رجل الأعمال البرازيلي: “لقد أعجب فريق شركة مبادلة بقدرة شركة Eike على توليد الأعمال ، في وقت كانت فيه البرازيل في وضع جيد للغاية ، وكانت مهتمة للغاية بالأصول”. “جاءوا لتقديم تقييم عملاق في المجموعة ، والتي استمرت ما يقرب من عام.” لكن الأرقام خانت العرب. بدءا من شركة النفط OGX ، لم تعط مشاريع Eike Batista النتائج الموعودة وكانت تتراجع واحدا تلو الآخر.
+                        <?= get_the_content(); ?>
                     </p>
                 </div>
                 <div class="clearfix">
                     <div class="mainSocial pullLeft">
-                        <a href="#"><i class="icon-telegram"></i></a>
-                        <a href="#"><i class="icon-twitter"></i></a>
-                        <a href="#"><i class="icon-facebook"></i></a>
+                        <a href="https://www.telegram.org/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-telegram"></i></a>
+                        <a href="https://www.twitter.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank""><i class="icon-twitter"></i></a>
+                        <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-facebook"></i></a>
                     </div>
                 </div>
 
@@ -37,7 +40,153 @@
             <hr>
 
             <div class="moreNewsTitle mainPadding textCentered">
-                <div>المزيد من</div>
+                <div> المزيد من </div>
                 <h2 class="title">المقالات</h2>
+
             </div>
 
+<?php endwhile;
+endif;
+?>
+
+            <!-- for the third section-->
+
+
+            <div class="oneSection">
+                <div class="myrow clearfix">
+                    <?php $query = new WP_Query(array(
+                        'post_type' => 'article',
+                        'posts_per_page' => '3',
+                        'offset' => '1'
+
+                    ));
+
+                    while ($query->have_posts()) {
+                        $query->the_post();
+                        ?>
+
+                        <div class="<?php echo ($query->current_post == 0) ? 'mycol-lg-6' : 'mycol-lg-3 mycol-sm-6' ?>">
+                            <div class="<?php echo ($query->current_post == 0) ? 'mainPost big' : 'mainPost' ?>">
+                                <div class="writerTop">
+                                    <div class="img"><img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>"  style="width: 36px" alt=""></div>
+                                    <span> <?php echo get_the_author_meta('first_name')." ".get_the_author_meta('last_name') ; ?> </span>
+                                </div>
+                                <a href="<?php the_permalink() ?>" class="avatar"><img
+                                            src="<?php echo get_the_post_thumbnail_url(); ?>" class="bgCover" alt=""></a>
+                                <div class="content">
+                                    <h3 class="title"><a
+                                                href="<?php the_permalink(); ?>"> <?php echo get_the_title(); ?> </a></h3>
+                                    <div class="description">
+                                        <div class="in"> <?php the_excerpt() ?> </div>
+                                    </div>
+                                    <div class="sectionAndSocial clearfix">
+                                        <div class="section"><?php the_category() ?></div>
+                                        <div class="mainSocial pullLeft">
+                                            <a href="#"><i class="icon-telegram"></i></a>
+                                            <a href="#"><i class="icon-twitter"></i></a>
+                                            <a href="#"><i class="icon-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="oneSection">
+                <div class="myrow clearfix">
+                    <?php $query = new WP_Query(array(
+                        'post_type' => 'article',
+                        'posts_per_page' => '3',
+                        'offset' => '4'
+
+                    ));
+                    $query->the_post();?>
+
+                    <div class="mycol-lg-6">
+                        <div class="mainPost small">
+                            <div class="writerTop">
+                                <div class="img"><img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" style="width: 36px" alt=""></div>
+                                <span><?php echo get_the_author_meta('first_name')." ".get_the_author_meta('last_name') ; ?></span>
+                            </div>
+                            <a href="<?php the_permalink() ?>" class="avatar"><img src="<?php echo get_the_post_thumbnail_url() ?>" class="bgCover" alt=""></a>
+                            <div class="content">
+                                <h3 class="title"><a href="<?php the_permalink() ?>"> <?php echo get_the_title() ?> </a>
+                                </h3>
+                                <div class="description">
+                                    <div class="in"> <?php the_excerpt() ?> </div>
+                                </div>
+                                <div class="sectionAndSocial clearfix">
+                                    <div class="section"><?php the_category(); ?></div>
+                                    <div class="mainSocial pullLeft">
+                                        <a href="https://www.telegram.org/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-telegram"></i></a>
+                                        <a href="https://www.twitter.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank""><i class="icon-twitter"></i></a>
+                                        <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php  $query->the_post();?>
+                    <div class="mycol-lg-3 mycol-sm-6">
+                        <div class="mainPost small">
+                            <div class="writerTop">
+                                <div class="img"><img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" style="width: 36px" alt=""></div>
+                                <span><?php echo get_the_author_meta('first_name')." ".get_the_author_meta('last_name') ; ?></span>
+                            </div>
+                            <div class="content">
+                                <h3 class="title"><a href="<?php the_permalink() ?>"><?php  echo get_the_title(); ?></a></h3>
+                                <div class="description"><div class="in"><?php the_excerpt(); ?></div></div>
+                                <div class="sectionAndSocial clearfix">
+                                    <div class="section"><?php the_category(); ?></div>
+                                    <div class="mainSocial pullLeft">
+                                        <a href="https://www.telegram.org/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-telegram"></i></a>
+                                        <a href="https://www.twitter.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank""><i class="icon-twitter"></i></a>
+                                        <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php  $query->the_post();?>
+                    <div class="mycol-lg-3 mycol-sm-6">
+                        <div class="mainPost small">
+                            <div class="writerTop">
+                                <div class="img"><img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" style="width: 36px" alt=""></div>
+                                <span><?php echo get_the_author_meta('first_name')." ".get_the_author_meta('last_name') ; ?></span>
+                            </div>
+                            <div class="content">
+                                <h3 class="title"><a href="<?php the_permalink() ?>"><?php  echo get_the_title(); ?></a></h3>
+                                <div class="description"><div class="in"><?php the_excerpt(); ?></div></div>
+                                <div class="sectionAndSocial clearfix">
+                                    <div class="section"><?php the_category(); ?></div>
+                                    <div class="mainSocial pullLeft">
+                                        <a href="https://www.telegram.org/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-telegram"></i></a>
+                                        <a href="https://www.twitter.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank""><i class="icon-twitter"></i></a>
+                                        <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <hr>
+
+
+        </div>
+    </div>
+
+    <?php get_footer(); ?>
+    </body>

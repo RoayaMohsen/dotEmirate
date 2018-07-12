@@ -4,7 +4,7 @@
 
     // set up
 
-
+        include "wp_bootstrap_navwalker.php";
     add_theme_support('menus');
 
     /*
@@ -25,12 +25,11 @@
 
 
 
-        ?>
-        <script src="<?php echo get_template_directory_uri().'/assets/js/jquery.js' ?>"></script>
-        <script src="<?php echo get_template_directory_uri().'/assets/js/respond.min.js' ?>"></script>
-        <script src="<?php echo get_template_directory_uri().'/assets/js/flexslider-min.js' ?>"></script>
-        <script src="<?php echo get_template_directory_uri().'/assets/js/myscript.js' ?>"></script>
-        <?php
+        wp_enqueue_script( 'option', get_theme_file_uri( '/assets/js/jquery.js' ), array() );
+        wp_enqueue_script( 'option', get_theme_file_uri( '/assets/js/respond.min.js' ), array() );
+        wp_enqueue_script( 'option', get_theme_file_uri( '/assets/js/jquery.flexslider-min.js' ), array() );
+        wp_enqueue_script( 'option', get_theme_file_uri( '/assets/js/myscript.js' ), array(),true );
+
 
 
     }
@@ -43,11 +42,7 @@
 
     function custom_menu(){
     //for many menus
-    register_nav_menus(array(
-        'bootstrap-menu' => 'Navigation Bar' ,
-
-
-    ));
+    register_nav_menu('primary' ,__('Navigation Bar','dot'));
 
 }
 
@@ -72,7 +67,7 @@
             wp_die(_('you must have a minimum version of 4.2 to use this theme .'));
         }
 
-        $theme_opts =       get_option('link_options');
+        $theme_opts =       get_option('opts');
 
         if (!$theme_opts){
             $option             =       array(
@@ -80,14 +75,89 @@
                 'facebook'      =>      '',
                 'twitter'       =>      '',
                 'telegram'      =>      '',
-                'logo_type'     =>       1,
-                'logo_img'      =>      '',
-                'footer'        =>      ''
+                'apple'      =>      '',
+                'windows'       =>      '',
+                'android'      =>      '',
+                'logo'      =>      '',
             );
-            add_option('link_options',$option);
+            add_option('opts',$option);
 
         }
     }
+
+
+function wp_show_date() {
+        $seconds = current_time( 'timestamp' ) - get_the_time('U') ;
+        $minutes = $seconds * 1.0 / 60;
+        $hours = $minutes *1.0 / 60;
+        $days = $hours / 24;
+        $months = $days / 30;
+        $years = $months / 12;
+            if($minutes < 2){
+                return "منذ دقيقة";
+            }
+            else if($minutes < 3){
+                return "منذ دقيقتين";
+            }
+            else if($minutes < 11){
+                return "منذ ".floor($minutes)." دقائق";
+            }
+            else if($hours < 1){
+                return "منذ ". floor($minutes) ." دقيقة";
+            }
+
+            else if($hours < 2){
+                return "منذ ساعة";
+            }
+
+            else if($hours < 3){
+                return "منذ ساعتين";
+            }
+            else if($hours < 11){
+                return "منذ ".floor($hours)." ساعات";
+            }
+            else if($days < 1){
+                return "منذ ".floor($hours)." ساعة";
+            }
+            else if($days < 2){
+                return "منذ يوم";
+            }
+            else if($days < 3){
+                return "منذ يومين";
+            }
+            else if($days < 11){
+                return "منذ ".floor($days)." ايام";
+            }
+            else if($months < 1){
+                return "منذ ".floor($days)." يوم";
+            }
+            else if($months < 2){
+                return "منذ شهر";
+            }
+            else if($months < 3){
+                return "منذ شهرين";
+            }
+            else if($months < 11){
+                return "منذ ".floor($months)." اشهر";
+            }
+            else if($years < 1){
+                return "منذ ".floor($months)." شهر";
+            }
+            else if($years < 2){
+                return "منذ سنة";
+            }
+            else if($years < 3){
+                return "منذ سنتين";
+            }
+            else if($years < 11){
+                return "منذ ".floor($years)." سنوات";
+            }
+            else if($years >= 11){
+                return "منذ ".floor($years)." سنين";
+            }
+
+}
+
     function create_admin_menus(){
             add_menu_page(
               'Dot Theme options',
@@ -121,18 +191,37 @@
                         </div>
                         <div class="form-group">
                             <label><?php _e('Facebook','dotEmirate'); ?></label>
-                            <input type="text" class="form-control" name="facebookInput" value="<?php echo  $option['Facebook'];?>">
+                            <input type="text" class="form-control" name="facebookInput" value="<?php echo  $option['facebook'];?>">
                         </div>
 
                         <div class="form-group">
                             <label><?php _e('Twitter','dotEmirate'); ?></label>
-                            <input type="text" class="form-control" name="twitterInput" value="<?php echo  $option['Twitter'];?>">
+                            <input type="text" class="form-control" name="twitterInput" value="<?php echo  $option['twitter'];?>">
                         </div>
 
                         <div class="form-group">
                             <label><?php _e('Telegram','dotEmirate'); ?></label>
-                            <input type="text" class="form-control" name="telegramInput" value="<?php echo  $option['Telegram'];?>">
+                            <input type="text" class="form-control" name="telegramInput" value="<?php echo  $option['telegram'];?>">
                         </div>
+
+
+                        <div class="form-group">
+                            <label><?php _e('Apple','dotEmirate'); ?></label>
+                            <input type="text" class="form-control" name="appleInput" value="<?php echo  $option['apple'];?>">
+                        </div>
+
+                        <div class="form-group">
+                            <label><?php _e('Android','dotEmirate'); ?></label>
+                            <input type="text" class="form-control" name="androidInput" value="<?php echo  $option['android'];?>">
+                        </div>
+
+                        <div class="form-group">
+                            <label><?php _e('Windows','dotEmirate'); ?></label>
+                            <input type="text" class="form-control" name="windowsInput" value="<?php echo  $option['windows'];?>">
+                        </div>
+
+
+
                         <div class="form-group">
                             <button type="submit"  class="btn btn-primary" name="create"> Create </button>
                         </div>
@@ -166,9 +255,12 @@
         }
         check_admin_referer('option_verify');
         $opts   =   get_option('opts');
-        $opts['Facebook'] = sanitize_text_field($_POST['facebookInput']);
-        $opts['Twitter'] = sanitize_text_field($_POST['twitterInput']);
-        $opts['Telegram'] = sanitize_text_field($_POST['telegramInput']);
+        $opts['facebook'] = sanitize_text_field($_POST['facebookInput']);
+        $opts['twitter'] = sanitize_text_field($_POST['twitterInput']);
+        $opts['telegram'] = sanitize_text_field($_POST['telegramInput']);
+        $opts['android'] = sanitize_text_field($_POST['androidInput']);
+        $opts['windows'] = sanitize_text_field($_POST['windowsInput']);
+        $opts['apple'] = sanitize_text_field($_POST['appleInput']);
         $opts['logo'] = esc_url_raw($_POST['imageInput']);
 
         update_option('opts' ,$opts);
@@ -177,8 +269,18 @@
     }
 
     // add_to_theme
-        add_theme_support('post-thumbnails');
 
+function setup()
+{
+
+    //Add featured image support
+    add_theme_support('post-thumbnails');
+    add_image_size('small-thumbnail', 200, 300, array('left', 'top'), true); //size of image
+
+}
+add_image_size('large','1257','668');
+add_image_size('medium','1257','668');
+add_image_size('small','35','35');
 
 
 
@@ -227,5 +329,5 @@
     add_action('after_switch_theme','opt_activation');
     add_action('admin_menu','create_admin_menus');
     add_action('admin_init','ju_admin_init');
-
-
+    add_action('show_date','wp_show_date');
+    add_action('after_setup_theme','setup');

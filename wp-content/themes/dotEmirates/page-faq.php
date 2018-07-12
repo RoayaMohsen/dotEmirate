@@ -1,6 +1,30 @@
     <?php
     get_header();
     ?>
+    <div class="loading">
+        <div class="tableDis">
+            <div class="oneCell">
+                <div class="theImg">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/loadingLogo.png'?>" alt="">
+                    <svg height="176" width="176">
+                        <circle cx="88" cy="88" r="87" stroke="#C1CA35" stroke-width="2" stroke-dasharray="546" fill="none"></circle><!-- stroke-dasharray="672" -->
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script >
+
+        $(window).on('load', function () {
+            $('.loading').css('display', 'none')
+        })
+
+
+
+    </script>
+
     <div class="inContent">
         <div class="gridContainer">
 
@@ -16,7 +40,7 @@
                     <div class="in">
                         <a href="http://localhost/dotEmirate/?page_id=120">شروط وأحكام</a>
                         <a href="http://localhost/dotEmirate/?page_id=102">إتفاقية الخصوصية</a>
-                        <a href="http://localhost/dotEmirate/?page_id=117">إتفاقية ملفات الإوتباط</a>
+                        <a href="http://localhost/dotEmirate/?page_id=117">إتفاقية ملفات الإرتباط</a>
                         <a href="http://localhost/dotEmirate/?page_id=108" class="active">الأسئلة الشائعة</a>
                         <a href="http://localhost/dotEmirate/?page_id=98">إتصل بنا</a>
                     </div>
@@ -36,4 +60,5 @@
         </div>
 
     </div>
+</div>
         <?php get_footer(); ?>
