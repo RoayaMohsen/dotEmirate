@@ -947,7 +947,5 @@
     </div>
     </div>
     <script>
-        function sliceMenu(){
-            document.getElementById('navigation').classList.toggle("slicedMenu");
-        }
+       
         </script>
