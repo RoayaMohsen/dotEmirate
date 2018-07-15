@@ -22,13 +22,16 @@
         wp_enqueue_style('boilerplate');
         wp_enqueue_style('mygrid');
 
+ wp_deregister_script('jquery');
+  ?>
+        <script src="<?php echo get_template_directory_uri().'/assets/js/jquery.js'?>"</script>
+        <?php
+        wp_enqueue_script( 'myscript', get_template_directory_uri(). '/assets/js/myscript.js' );
+        wp_enqueue_script( 'respond.min', get_template_directory_uri(). '/assets/js/respond.min.js' ) ;
+        wp_enqueue_script( 'flexslider-min', get_template_directory_uri(). '/assets/js/jquery.flexslider-min.js' );
 
+        wp_enqueue_script( 'respond.min', get_theme_file_uri( '/assets/js/respond.min.js' ), array() );
 
-
-        wp_enqueue_script( 'option', get_theme_file_uri( '/assets/js/jquery.js' ), array() );
-        wp_enqueue_script( 'option', get_theme_file_uri( '/assets/js/respond.min.js' ), array() );
-        wp_enqueue_script( 'option', get_theme_file_uri( '/assets/js/jquery.flexslider-min.js' ), array() );
-        wp_enqueue_script( 'option', get_theme_file_uri( '/assets/js/myscript.js' ), array(),true );
 
 
 
@@ -313,18 +316,34 @@ add_image_size('small','35','35');
     }
 
     function add_ajax(){
-        wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), time(), true );
-        /* localize script */
 
+
+                wp_register_script( 'my_loadmore', get_template_directory_uri() . '/assets/js/ajax.js' );
+
+
+                wp_localize_script( 'my_loadmore', 'loadmore_params', array(
+                    'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+                  'ppp' => 2
+                ) );
+
+                wp_enqueue_script( 'my_loadmore' );
 
 
     }
+    function loadmore(){
+
+	// prepare our arguments for the query
+	die($_POST['ppp']);
+}
 
 
     //Action & Filter Hocks
 
 
+    add_action('wp_ajax_loadmore', 'loadmore'); // wp_ajax_{action}
+    add_action('wp_ajax_nopriv_loadmore', 'loadmore'); // wp_ajax_nopriv_{action} //for all users
     add_action('wp_enqueue_scripts','ju_enqueue');
+    add_action('wp_enqueue_scripts','add_ajax');
     add_action('after_setup_theme','custom_menu');
     add_action('after_switch_theme','opt_activation');
     add_action('admin_menu','create_admin_menus');

@@ -402,10 +402,24 @@
 
 
 
+<?php $x=19;?>
 
                     <hr>
 
-                    <div class="textCentered mainPadding"><a href="#">المزيد ...</a></div>
+                    <div class="textCentered mainPadding">
+                      <?php
+                      $wp_query=new WP_Query(array(
+                              'offset'=>$x,
+                          'posts_per_page' => '2'
+
+                      )) ;
+?>                  <input type="hidden" name="offset" value="<?php echo $x?>">
+                    <input type="hidden" name="ppp" value="2">
+                        <?php
+                      if (  $wp_query-> max_num_pages  > 2 ) {
+                          ?> <a  style="cursor: pointer" id="loadmore" >المزيد ...</a>
+                        <?php  }?>
+                        </div>
 
         </div>
     </div>

@@ -11,6 +11,7 @@
     <html lang="en">
     <head>
  <?php wp_head();?>
+
     </head>
     <body class="">
 
@@ -943,6 +944,7 @@
             ?> <a href="https://facbook.com/ <?php echo $theme_opts['facebook']; ?>" ><i class="icon-facebook"></i></a><?php
 
             ?>
+    </div>
     </div>
     <script>
         function sliceMenu(){
