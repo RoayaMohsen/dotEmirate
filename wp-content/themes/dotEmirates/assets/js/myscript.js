@@ -99,24 +99,24 @@ $(window).load(function(){
 --------------------------------------------------------*/
 var imgObj, divEle, divEle_width, divEle_height, imgEle, imgEle_width, imgEle_height,
 eles = document.getElementsByClassName('bgCover');
-for(i=0; i<eles.length; i++){ 
+for(i=0; i<eles.length; i++){
 	eles.item(i).parentNode.style.background = "#ddd";
 }
 
 function getImages(){
 	for(i=0; i<eles.length; i++){
-		
+
 		imgEle = eles[i];
 		divEle = imgEle.parentNode;
-		
+
 		divEle_width = divEle.offsetWidth;
 		divEle_height = divEle.offsetHeight;
-		
+
 		imgObj = new Image();
 		imgObj.src = imgEle.getAttribute('src');
 		imgEle_width = imgObj.width;
 		imgEle_height = imgObj.height;
-		
+
 		if( divEle_height/imgEle_height > divEle_width/imgEle_width ){
 			imgEle.classList.remove("fullWidth");
 			imgEle.classList.remove("fullHeight");

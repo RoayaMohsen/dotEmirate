@@ -50,30 +50,27 @@ get_header();
             <div class="mrgBtm clearfix">
                 <div class="myrow clearfix">
                     <div class="mycol-lg-6">
-                        <form action="#" class="mrgBtm-lg">
+                        <form id="form"  class="mrgBtm-lg">
                             <div class="myrow clearfix">
                                 <div class="mycol-lg-12">
                                     <select class="formItem mrgBtm">
                                         <option value="0">اتصل بنا</option>
-                                        <option value="1">اتصل بنا</option>
-                                        <option value="2">اتصل بنا</option>
-                                        <option value="3">اتصل بنا</option>
                                     </select>
                                 </div>
                                 <div class="mycol-sm-6">
-                                    <input type="text" class="formItem mrgBtm" placeholder="الإسم">
+                                    <input type="text" class="formItem mrgBtm" placeholder="الإسم" id="name" name="name">
                                 </div>
                                 <div class="mycol-sm-6">
-                                    <input type="text" class="formItem mrgBtm" placeholder="البريد الإلكتروني">
+                                    <input type="text" class="formItem mrgBtm" placeholder="البريد الإلكتروني" id="email" name="email" >
                                 </div>
                                 <div class="mycol-sm-6">
-                                    <input type="text" class="formItem mrgBtm" placeholder="الهاتف الجوال">
+                                    <input type="text" class="formItem mrgBtm" placeholder="الهاتف الجوال" id="mobile" name="mobile">
                                 </div>
                                 <div class="mycol-sm-6">
-                                    <input type="text" class="formItem mrgBtm" placeholder="المكان">
+                                    <input type="text" class="formItem mrgBtm" placeholder="المكان" id="place" name="place">
                                 </div>
                                 <div class="mycol-lg-12">
-                                    <textarea class="formItem textarea mrgBtm" placeholder="الرسالة"></textarea>
+                                    <textarea class="formItem textarea mrgBtm" placeholder="الرسالة" id="message" name="message"></textarea>
                                     <input type="submit" class="formItem submit" value="إرسال">
                                 </div>
                             </div>

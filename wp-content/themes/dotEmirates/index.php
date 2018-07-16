@@ -402,10 +402,27 @@
 
 
 
+<?php $x=19;?>
 
                     <hr>
+            <div id="repeat" >
 
-                    <div class="textCentered mainPadding"><a href="#">المزيد ...</a></div>
+                    <div class="textCentered mainPadding" >
+
+                      <?php
+                      $wp_query=new WP_Query(array(
+                              'offset'=>$x,
+                          'posts_per_page' => '2'
+
+                      )) ;?>
+
+
+                          <?php
+                      if (  $wp_query-> max_num_pages  > 2 ) {
+                          ?> <a  style="cursor:pointer" id="loadmore" >المزيد ...</a>
+                        <?php  }?>
+                      </div>
+            </div>
 
         </div>
     </div>

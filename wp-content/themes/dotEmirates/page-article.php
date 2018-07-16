@@ -180,9 +180,9 @@
                                 <div class="sectionAndSocial clearfix">
                                     <div class="section"><?php the_category() ?></div>
                                     <div class="mainSocial pullLeft">
-                                        <a href="#"><i class="icon-telegram"></i></a>
-                                        <a href="#"><i class="icon-twitter"></i></a>
-                                        <a href="#"><i class="icon-facebook"></i></a>
+                                        <a href="https://www.telegram.org/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-telegram"></i></a>
+                                        <a href="https://www.twitter.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank""><i class="icon-twitter"></i></a>
+                                        <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank"><i class="icon-facebook"></i></a>
                                     </div>
                                 </div>
                             </div>

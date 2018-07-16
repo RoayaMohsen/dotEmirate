@@ -72,6 +72,10 @@
 
     </div>
 </footer>
+
+
+
+
 <div class="loading" style="display: none;">
     <div class="tableDis">
         <div class="oneCell">
@@ -88,10 +92,10 @@
 
 <script >
 
-    $('.loading').css('display', 'none')
     $(document).on('ready', function () {
-    })
+        $('.loading').css('display', 'none')
 
+    })
 
 
 </script>

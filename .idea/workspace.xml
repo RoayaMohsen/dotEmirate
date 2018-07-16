@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c86d15ab-b6fd-4518-ba19-3a3a1e5fe309" name="Default" comment="" />
+    <list default="true" id="c86d15ab-b6fd-4518-ba19-3a3a1e5fe309" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-contactus.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-contactus.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="117" column="33" lean-forward="true" selection-start-line="111" selection-start-column="28" selection-end-line="117" selection-end-column="33" />
+            <state relative-caret-position="75">
+              <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#8;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="480" selection-start-line="480" selection-end-line="480" />
             </state>
           </provider>
         </entry>
@@ -46,8 +66,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-220">
-              <caret line="326" column="30" selection-start-line="326" selection-start-column="30" selection-end-line="326" selection-end-column="30" />
+            <state relative-caret-position="1340">
+              <caret line="430" column="30" selection-start-line="430" selection-start-column="30" selection-end-line="430" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -63,23 +83,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>menu-item</find>
-      <find>aria-expanded</find>
-      <find>bMenu</find>
-      <find>font-f</find>
-      <find>init</find>
-      <find>script</find>
-      <find>enqueue_sc</find>
-      <find>wp_enqueue_script</find>
-      <find>option_verify</find>
-      <find>offset</find>
-      <find>wide</find>
       <find>v</find>
       <find>imag</find>
-      <find>option</find>
       <find>op</find>
       <find>imageInput</find>
-      <find>logo</find>
       <find>منذ</find>
       <find>المزيد</find>
       <find>من</find>
@@ -93,7 +100,23 @@
       <find>category</find>
       <find>tele</find>
       <find>tela</find>
+      <find>add_ima</find>
+      <find>logo</find>
+      <find>option.js</find>
+      <find>admin-post.php</find>
+      <find>admin-post</find>
+      <find>option</find>
+      <find>theme_opt_page</find>
+      <find>$q=</find>
+      <find>$q.=</find>
+      <find>post-cate</find>
+      <find>image</find>
+      <find>icon</find>
+      <find>&lt;script</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,19 +150,24 @@
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/404.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-about.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-agreements.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-contactus.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-faq.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-privacy.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-terms.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/wp_bootstrap_navwalker.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/single-article.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/category.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/ajax.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/myscript.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-contactus.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/form.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/searchResults.html" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/dotEmirates/search.php" />
       </list>
     </option>
   </component>
@@ -178,55 +206,6 @@
               <item name="dotEmirate" type="b2602c69:ProjectViewProjectNode" />
               <item name="dotEmirate" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dotEmirate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dotEmirate" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dotEmirate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dotEmirate" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dotEmirate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dotEmirate" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="dotEmirates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dotEmirate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dotEmirate" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="dotEmirates" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dotEmirate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dotEmirate" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="dotEmirates" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dotEmirate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dotEmirate" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dotEmirate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dotEmirate" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="twentyfifteen" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -235,9 +214,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="funct&#9;FILE&#9;file:///var/www/html/dotEmirate/wp-content/themes/dotEmirates/functions.php&#10;head&#9;FILE&#9;file:///var/www/html/dotEmirate/wp-content/themes/dotEmirates/header.php&#10;sliceMenu&#9;null&#9;null&#10;footer&#9;FILE&#9;file:///var/www/html/dotEmirate/wp-content/themes/dotEmirates/footer.php" />
+    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file:///var/www/html/dotEmirate/wp-content/themes/dotEmirates/index.php&#10;funct&#9;FILE&#9;file:///var/www/html/dotEmirate/wp-content/themes/dotEmirates/functions.php&#10;head&#9;FILE&#9;file:///var/www/html/dotEmirate/wp-content/themes/dotEmirates/header.php&#10;sliceMenu&#9;null&#9;null&#10;footer&#9;FILE&#9;file:///var/www/html/dotEmirate/wp-content/themes/dotEmirates/footer.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/first task/serverError" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -280,12 +259,13 @@
       <workItem from="1531215861703" duration="16274000" />
       <workItem from="1531292069212" duration="12850000" />
       <workItem from="1531308138695" duration="12617000" />
-      <workItem from="1531378667159" duration="29974000" />
+      <workItem from="1531378667159" duration="30295000" />
+      <workItem from="1531640398152" duration="33316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175316000" />
+    <option name="totallyTimeSpent" value="208637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,7 +277,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32970452" />
@@ -306,7 +286,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49880478" weight="0.32970452" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22709164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22709164" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32988048" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49961567" weight="0.6216216" />
@@ -346,29 +326,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/test/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/page-privcay.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/privacy.html" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/contactus.html" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/faq.html" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/agreements.html" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/terms.html" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/faq.html" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/agreements.html" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/about.html" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/test/wp_bootstrap_navwalker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="246" column="79" selection-start-line="246" selection-start-column="79" selection-end-line="246" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/index.html" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/test/404.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -410,13 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/test/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/loading-page/loading-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6120" />
@@ -426,13 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="651" column="4" selection-start-line="651" selection-start-column="4" selection-end-line="662" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -447,13 +390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/page-contactus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -492,16 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="259" column="120" selection-start-line="259" selection-start-column="120" selection-end-line="259" selection-end-column="120" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/single-article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -536,20 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="326" column="30" selection-start-line="326" selection-start-column="30" selection-end-line="326" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-810">
@@ -557,17 +469,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config-sample.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/class-wp-query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="3333" column="20" selection-start-line="3333" selection-start-column="20" selection-end-line="3333" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_types.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/admin-ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+        <state relative-caret-position="364">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/option.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-end-line="24" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/page-contactus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/js/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/test/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/page-article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="35" column="32" selection-start-line="35" selection-end-line="36" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-655" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="430" column="30" selection-start-line="430" selection-start-column="30" selection-end-line="430" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -575,6 +580,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="117" column="33" lean-forward="true" selection-start-line="111" selection-start-column="28" selection-end-line="117" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/assets/searchResults.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="196" column="64" selection-start-line="196" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="173" column="10" lean-forward="true" selection-start-line="173" selection-start-column="10" selection-end-line="173" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/dotEmirates/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#8;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
