@@ -21,21 +21,42 @@
 
         }
         global $wpdb;
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         $table_name = $wpdb->prefix . "ordering";
-        if ($wpdb->get_var('SHOW TABLES LIKE '.$table_name) != $table_name) {
-            $sql = 'CREATE TABLE ' . $table_name . '(
-          ID INTEGER(10) UNSIGNED  AUTO_INCREMENT NOT NULL,
-          post_order INTEGER(10) UNIQUE NOT NULL,
-          post_ID bigint (20) UNSIGNED NOT NULL, 
+        if ($wpdb->get_var('show tables like \''. $table_name.'\'') != $table_name) {
+          $sql ='CREATE TABLE '.$table_name.'(
+          ID BIGINT(20) UNSIGNED AUTO_INCREMENT NOT NULL,
+          post_order INTEGER(10)  NOT NULL,
+          post_ID BIGINT (20) UNSIGNED NOT NULL, 
           PRIMARY KEY(ID),
-          FOREIGN KEY (post_ID) REFERENCES wp_posts(ID) ON DELETE CASCADE;
+          FOREIGN KEY (post_ID) REFERENCES wp_posts(ID) ON DELETE CASCADE
         )';
+            require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+
             dbDelta($sql);
+            add_option('ordering_database_option','1.0');
         }
+
     }
 
     register_activation_hook(__FILE__, 'active_plugin');
+
+    function scripts(){?>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+                $( function() {
+                    $( "#sortable" ).sortable();
+                    $( "#sortable" ).disableSelection();
+                } );
+        </script>
+
+
+        <?php
+
+    }
+
 
 /*
     function test_plugin_setup_menu()
@@ -46,13 +67,18 @@
     function reordering_init()
     {
         active_plugin();
-
+        scripts();
         ?>
 
         <h4>Hello , you can now reorder the posts as you like to see them </h4>
 
         <?php
+//        global $wpdb;
+//        $findID = $wpdb->get_var("SELECT * FROM wp_posts WHERE ID =  ");
+//        echo $findID;
 
+             ?>   <ul id="sortable">
+<?php
         $query = new WP_Query(array(
             'post_type' => 'post',
             'posts_per_page' => '-1'
@@ -62,13 +88,15 @@
             while ($query->have_posts() ){
                 $query->the_post();
             ?>
-
-                <h3 class="title"><a href="<?php the_permalink(); ?>"> <?php echo get_the_title(); ?> </a></h3>
+            <li id="<?php echo get_the_ID() ?>">
+            <h3 class="title"><a href="<?php the_permalink(); ?>"> <?php echo get_the_title(); ?> </a></h3>
                 <div class="description"><div class="in"><?php  echo the_excerpt(); ?> </div></div>
 
+            </li>
             <?php
-        }}
-
+        }}?>
+                </ul>
+<?php
     }
     /* add in admin menu  button to the plugin  */
     function reordering_menu(){
