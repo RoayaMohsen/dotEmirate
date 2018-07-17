@@ -61,10 +61,10 @@ get_header();
                                     <input type="text" class="formItem mrgBtm" placeholder="الإسم" id="name" name="name">
                                 </div>
                                 <div class="mycol-sm-6">
-                                    <input type="text" class="formItem mrgBtm" placeholder="البريد الإلكتروني" id="email" name="email" >
+                                    <input type="email" class="formItem mrgBtm" placeholder="البريد الإلكتروني" id="email" name="email" >
                                 </div>
                                 <div class="mycol-sm-6">
-                                    <input type="text" class="formItem mrgBtm" placeholder="الهاتف الجوال" id="mobile" name="mobile">
+                                    <input type="number" class="formItem mrgBtm" placeholder="الهاتف الجوال" id="mobile" name="mobile">
                                 </div>
                                 <div class="mycol-sm-6">
                                     <input type="text" class="formItem mrgBtm" placeholder="المكان" id="place" name="place">
