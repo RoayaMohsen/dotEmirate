@@ -13,6 +13,7 @@
         }
     /* create ordering table to save the order of each post  when activation the plugin */
 
+
     function active_plugin()
     {
         if (version_compare(get_bloginfo('version'), '4.2', '<')) {
@@ -40,11 +41,16 @@
 
     register_activation_hook(__FILE__, 'active_plugin');
 
+
     function scripts(){?>
 
 
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script src='<?php echo plugins_url( '/re-ordering/ajaxReordering.js')?>'></script>
+
+
         <script>
                 $( function() {
                     $( "#sortable" ).sortable();
@@ -96,6 +102,7 @@
             <?php
         }}?>
                 </ul>
+        <button> click here </button>
 <?php
     }
     /* add in admin menu  button to the plugin  */
@@ -105,3 +112,10 @@
     }
     add_action('admin_menu', 'reordering_menu');
 
+
+//
+//    function add_js_file(){
+//    wp_enqueue_script( 'custom-script', plugins_url( '/re-ordering/ajaxReordering.js', __FILE__ ) );
+//
+//    }
+//add_action( 'wp_enqueue_scripts', 'add_js_file' );
